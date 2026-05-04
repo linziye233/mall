@@ -1,0 +1,93 @@
+NEW_FILE_CODE
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE - IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# IDE - Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# IDE - VS Code
+.vscode/
+
+# IDE - NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# IDE - MyEclipse
+.myeclipse
+
+# Spring Boot
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# MyBatis Generator - 生成的文件（如果需要排除）
+# mall-mbg/src/main/java/com/test/mall/model/
+# mall-mbg/src/main/resources/com/test/mall/mapper/
+# mall-mbg/src/main/java/com/test/mall/mapper/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+
+# Coverage
+coverage/
+*.gcov
+*.gcda
+*.gcno
+
+# JRebel
+rebel.xml
+
+# JavaDoc
+javadoc/
+
+# Helix
+.nuget/packages.config
+.nuget/project.json
