@@ -1,0 +1,55 @@
+server:
+  port: 8899
+
+spring:
+  application:
+    name: mall-agent
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      password:
+      database: 0
+      timeout: 3000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+
+# LangChain4j 配置
+langchain4j:
+  open-ai:
+    chat-model:
+      base-url: https://api.deepseek.com
+      api-key: ${DEEPSEEK_API_KEY:your-api-key-here}
+      model-name: deepseek-chat
+      temperature: 0.3
+      timeout: 60s
+      log-requests: true
+      log-responses: true
+    streaming-chat-model:
+      base-url: https://api.deepseek.com
+      api-key: ${DEEPSEEK_API_KEY:your-api-key-here}
+      model-name: deepseek-chat
+      temperature: 0.3
+      timeout: 60s
+  redis:
+    embedding-store:
+      host: 127.0.0.1
+      port: 6379
+      dimension: 384
+      metadata-field-name: metadata
+      text-field-name: text
+      embedding-field-name: embedding
+      distance-metric: COSINE
+
+# 日志
+logging:
+  level:
+    dev.langchain4j: DEBUG
+    com.test.mall.agent: DEBUG

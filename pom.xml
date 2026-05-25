@@ -32,6 +32,7 @@
         <module>mall-seckill</module>
         <module>mall-order-sharding</module>
         <module>mall-portal</module>
+        <module>mall-agent</module>
     </modules>
 
     <properties>
